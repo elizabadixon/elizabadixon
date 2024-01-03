@@ -1,0 +1,14 @@
+Deck.exe: cardDriver.o Card.o StandardDeck.o
+	g++ cardDriver.cpp Card.o StandardDeck.o -o Deck.exe
+
+cardDriver.o: cardDriver.cpp
+  g++ -c cardDriver.cpp -o cardDriver.o
+
+Card.o: Card.cpp
+	g++ -c Card.cpp -o Card.o
+
+StandardDeck.o: StandardDeck.cpp
+	g++ -c StandardDeck.cpp -o StandardDeck.o
+
+clean:
+	rm *.o Deck.exe
