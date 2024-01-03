@@ -1,0 +1,20 @@
+RB.exe: treeDriver.o Node.o TreeNode.o BinaryTree.o RedBlackTree.o
+	g++ treeDriver.cpp Node.o TreeNode.o BinaryTree.o RedBlackTree.o -o RB.exe
+
+treeDriver.o: treeDriver.cpp
+	g++ -c treeDriver.cpp -o treeDriver.o
+
+Node.o: Node.cpp
+	g++ -c Node.cpp -o Node.o
+
+TreeNode.o: TreeNode.cpp
+	g++ -c TreeNode.cpp -o TreeNode.o
+
+BinaryTree.o: BinaryTree.cpp
+	g++ -c BinaryTree.cpp -o BinaryTree.o
+
+RedBlackTree.o: RedBlackTree.cpp
+	g++ -c RedBlackTree.cpp -o RedBlackTree.o
+
+clean:
+	rm *.o RB.exe
