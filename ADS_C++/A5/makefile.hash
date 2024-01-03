@@ -1,17 +1,1 @@
-A6.exe: hashDriver.o HashEntry.o HashTableArray.o HashTableCuckoo.o 
-	g++ hashDriver.cpp HashEntry.o HashTableArray.o HashTableCuckoo.o -o A6.exe
-
-hashDriver.o: hashDriver.cpp
-	g++ -c hashDriver.cpp -o hashDriver.o
-
-HashEntry.o: HashEntry.cpp
-	g++ -c HashEntry.cpp -o HashEntry.o
-
-HashTableArray.o: HashTableArray.cpp
-	g++ -c HashTableArray.cpp -o HashTableArray.o
-
-HashTableCuckoo.o: HashTableCuckoo.cpp
-	g++ -c HashTableCuckoo.cpp -o HashTableCuckoo.o
-
-clean:
-	rm *.o A6.exe
+NOT SUPPOSED TO BE HERE
