@@ -64,11 +64,10 @@ class StandardDeck
 
 		Card dealCard();
 
-		// std::string getTopBattle();
 		
-		// std::string getTopHand();
+		std::string getTopHand();
 
-		// void halfDeck(StandardDeck & hand1_, StandardDeck & hand2_);
+		void halfDeck(StandardDeck & hand1_, StandardDeck & hand2_);
 
 		
 	protected: 

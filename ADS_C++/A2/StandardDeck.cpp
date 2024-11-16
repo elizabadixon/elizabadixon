@@ -4,6 +4,7 @@
 // received any help on this assignment.
 //
 // eadixon
+
 #include "Card.h"
 #include "StandardDeck.h"
 #define DECK_SIZE 52
@@ -28,10 +29,12 @@ bool StandardDeck::isEmpty()
 {
     if(deck_ == nullptr)
     {
+        std::cout<< "The deck is empty." <<std::endl;
         return 1;
     }
     else
     {
+        std::cout<< "The deck is not empty." <<std::endl;
         return 0;
     }
 }
@@ -60,12 +63,14 @@ bool StandardDeck::addCard(Card c)
 {
     if(numCards_ < 52)
     {
+        std::cout<< "Yes, you can add a card!" <<std::endl;
         deck_ [numCards_] = c;
         numCards_++;
         return 1;
     }
     else
     {
+         std::cout<< "No, you can't add a card - the deck is full." <<std::endl;
         return 0;
     }
 }
@@ -74,9 +79,9 @@ void StandardDeck::shuffle()
 {
     srand(time(NULL));
     
-    for(int i=0;i<3;i++)
+    for(int i=0; i<3; i++)
     {
-        for(int s=0; s<numCards_;s++)
+        for(int s=0; s<numCards_; s++)
         {
             int randS = (rand() % numCards_-1)+1;
             Card randCard = deck_[randS];
@@ -109,6 +114,7 @@ bool StandardDeck::mergeDecks(StandardDeck & newDeck, bool shuffle)
             deck_[m+numCards_] = newDeck.deck_[m];
             counter++;
         }
+        shuffle = 1;
     }
     else
     {
@@ -124,17 +130,19 @@ bool StandardDeck::mergeDecks(StandardDeck & newDeck, bool shuffle)
 
     if(shuffle == 1)
     {
+        std::cout<< "Yes, you can merge decks." <<std::endl;
         return 1;
     }
     else
     {
-        return 1; 
+        std::cout<< "No, you can't merge decks." <<std::endl;
+        return 0; 
     }
 
-    return 0; //because the default for wanting to shuffle is false --> will be 1 if able to merge decks
+    //return 0; //because the default for wanting to shuffle is false --> will be 1 if able to merge decks
 }
 
-void StandardDeck::initializeDeck() //now that this is done - how do i update default constructor accordingly??
+void StandardDeck::initializeDeck() 
 {
     for(int s=1; s<5; s++) //counts for suits
     {
@@ -148,43 +156,6 @@ void StandardDeck::initializeDeck() //now that this is done - how do i update de
 
 Card StandardDeck::dealCard()
 {
-    // Card dealtCard = getTopCard();
     return deck_[numCards_];
     numCards_--;
 }
-
-// std::string StandardDeck::getTopBattle()
-// {
-//     Card topCardHand;
-//     topCardHand = deck_[numCards_-1];
-//     //std::cout<<topCardHand.print() << "Battle card top:" <<std::endl;
-//     return topCardHand.getFace();
-// }
-
-// std::string StandardDeck::getTopHand()
-// {
-//     Card topCardBattle;
-//     topCardBattle = deck_[numCards_];
-//     //std::cout<<topCardBattle.print() << "Player Card top" <<std::endl;
-//     return topCardBattle.getFace();
-// }
-
-// void StandardDeck::halfDeck(StandardDeck & hand1_, StandardDeck & hand2_)
-// {
-//     //could've used dealCard() ideas to return top and bottom parts of the deck??
-//     for(int i=0; i<numCards_/2; i++)
-//     {
-//         hand1_.deck_[numCards_++];//=deck_[i]; //[i++]
-//     } 
-
-//     hand1_.numCards_=25; //=25
-//     // std:cout<<hand1_.printDeck();
-
-    
-//     for(int i=numCards_/2; i<numCards_; i++)
-//     {
-//         hand2_.deck_[numCards_++];//=deck_[i]; //[i++]
-//     }
-//     //hand2_.printDeck();
-//     hand2_.numCards_=25; //=25
-// }
