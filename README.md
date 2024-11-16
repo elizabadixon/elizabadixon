@@ -7,3 +7,7 @@ For Advanced Data Structures course using C++:
   4) Doubly Linked List Traversal/Insertion
   5) Red-Black Tree (insertions, rotations, traversal simulations, general red-black tree/binary tree rule implementation)
   6) Hash Table/Collision Technique Implementation (Chaining - includes removal of nodes in a linked list, cuckoo hashing, and linear/quadratic probing techniques)
+
+For Computer Networks using C/C++:
+  1) Basic socket connection
+  2) 
