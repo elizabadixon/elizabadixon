@@ -1,0 +1,14 @@
+Sock.exe: sockDriver.o Socket.o SMTP.o
+	g++ sockDriver.cpp Socket.o SMTP.o -o Sock.exe
+
+sockDriver.o: sockDriver.cpp
+	g++ -c sockDriver.cpp -o sockDriver.o
+
+Socket.o: Socket.cpp
+	g++ -c Socket.cpp -o Socket.o
+
+SMTP.o: SMTP.cpp
+	g++ -c SMTP.cpp -o SMTP.o
+
+clean:
+	rm *.o Sock.exe
