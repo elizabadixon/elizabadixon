@@ -13,3 +13,7 @@ For Computer Networks using C/C++:
   2) HTTP Message Object used to make an HTTP request.
   3) SMTP Mailer Agent that simulates an email being sent
   4) IP Calculator that accepts a CIDR format and displays the Network, Broadcast, and # of usable addresses.
+
+For Intro to Software Engineering using C#/.NET on Visual Studio:
+  1) Semester-long insurance claim database team project
+  2) Carried out using the Agile/Scrum methodology
