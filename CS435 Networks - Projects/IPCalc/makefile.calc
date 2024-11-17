@@ -1,0 +1,14 @@
+Calc.exe: main.o IP.o CIDR.o
+	g++ main.cpp IP.o CIDR.o -o Calc.exe
+
+main.o: main.cpp
+	g++ -c main.cpp -o main.o
+
+IP.o: IP.cpp
+	g++ -c IP.cpp -o IP.o
+
+CIDR.o: CIDR.cpp
+	g++ -c CIDR.cpp -o CIDR.o
+
+clean:
+	rm *.o Calc.exe
