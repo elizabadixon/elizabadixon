@@ -18,3 +18,18 @@ For Intro to Software Engineering using C#/.NET on Visual Studio:
   1) Semester-long insurance claim database team project
   2) Carried out using the Agile/Scrum methodology
   3) Apart from the piece of software itself, the directory includes the sprint reviews and final report for the project
+
+IN PROGRESS:
+
+  EPICS (Engineering Projects in Community Service):
+    * Deliverable is a comprehensive tutorial that will assist medical professionals in using a particular software meant to safely store patient data in offline/online environments
+
+  SE463 - Software Testing & Quality Assurance:
+    * After learning about various software testing techniques, students put them into action and write reports about them
+    * I have completed Boundary Value Analysis, Equivalence Class Testing, and Path-based Testing
+
+  CS351 - Algorithms:
+    * Apart from learning about various methods of algorithm optimization, students are tasked with writing programs using the 0-1 Knapsack Problem - altered using various techniques
+    * I have completed the Greedy version
+
+    
