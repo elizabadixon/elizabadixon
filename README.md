@@ -22,14 +22,14 @@ For Intro to Software Engineering using C#/.NET on Visual Studio:
 IN PROGRESS:
 
   EPICS (Engineering Projects in Community Service):
-    * Deliverable is a comprehensive tutorial that will assist medical professionals in using a particular software meant to safely store patient data in offline/online environments
+    1) Deliverable is a comprehensive tutorial that will assist medical professionals in using a particular software meant to safely store patient data in offline/online environments
 
   SE463 - Software Testing & Quality Assurance:
-    * After learning about various software testing techniques, students put them into action and write reports about them
-    * I have completed Boundary Value Analysis, Equivalence Class Testing, and Path-based Testing
+    1) After learning about various software testing techniques, students put them into action and write reports about them
+    2) I have completed Boundary Value Analysis, Equivalence Class Testing, and Path-based Testing
 
   CS351 - Algorithms:
-    * Apart from learning about various methods of algorithm optimization, students are tasked with writing programs using the 0-1 Knapsack Problem - altered using various techniques
-    * I have completed the Greedy version
+    1) Apart from learning about various methods of algorithm optimization, students are tasked with writing programs using the 0-1 Knapsack Problem - altered using various techniques
+    2) I have completed the Greedy version
 
     
