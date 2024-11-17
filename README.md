@@ -22,7 +22,7 @@ For Intro to Software Engineering using C#/.NET on Visual Studio:
 IN PROGRESS:
 
   EPICS (Engineering Projects in Community Service):
-    1) Deliverable is a comprehensive tutorial that will assist medical professionals in using a particular software meant to safely store patient data in offline/online environments 
+    1. Deliverable is a comprehensive tutorial that will assist medical professionals in using a particular software meant to safely store patient data in offline/online environments 
 
   SE463 - Software Testing & Quality Assurance:
     1) After learning about various software testing techniques, students put them into action and write reports about them
