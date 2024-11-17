@@ -1,4 +1,4 @@
-This repository includes the projects I have completed as part of my coursework as a Software Engineering student at Butler University:
+The "elizabadixon" repository includes the projects I have completed as part of my coursework as a Software Engineering student at Butler University:
 
 For Advanced Data Structures course using C++:
   1) Indy500 Race Simulation (Intro to C++ classes).
