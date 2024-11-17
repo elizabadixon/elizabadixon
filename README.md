@@ -26,7 +26,7 @@ IN PROGRESS:
 
   SE463 - Software Testing & Quality Assurance:
     1) After learning about various software testing techniques, students put them into action and write reports about them.
-    2) I have completed Boundary Value Analysis, Equivalence Class Testing, and Path-based Testing.
+    2) I have completed Boundary Value Analysis (AKA directory "A1"), Equivalence Class Testing, and Path-based Testing.
     
   CS351 - Algorithms:
     1) Apart from learning about various methods of algorithm optimization, students are tasked with writing programs using the 0-1 Knapsack Problem - altered using various techniques.
