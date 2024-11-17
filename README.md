@@ -17,3 +17,4 @@ For Computer Networks using C/C++:
 For Intro to Software Engineering using C#/.NET on Visual Studio:
   1) Semester-long insurance claim database team project
   2) Carried out using the Agile/Scrum methodology
+  3) Apart from the piece of software itself, the directory includes the sprint reviews and final report for the project
