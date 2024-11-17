@@ -10,4 +10,5 @@ For Advanced Data Structures course using C++:
 
 For Computer Networks using C/C++:
   1) Basic socket connection
-  2) 
+  2) HTTP Message Object
+  3) SMTP Mailer
