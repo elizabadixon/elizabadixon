@@ -1,0 +1,117 @@
+DROP TABLE IF EXISTS Client;
+DROP TABLE IF EXISTS Claim;
+DROP TABLE IF EXISTS Supplemental_File;
+DROP TABLE IF EXISTS Message
+DROP TABLE IF EXISTS Administrator;
+DROP TABLE IF EXISTS Claim_Manager;
+DROP TABLE IF EXISTS Finance_Manager;
+DROP TABLE IF EXISTS Person;
+
+	
+CREATE TABLE Person
+(
+	User_Number INT NOT NULL,
+	Username varchar(32) NOT NULL,
+	Password varchar(32) NOT NULL,
+	User_Type varchar(32) NOT NULL,
+	Email varchar(32) NOT NULL,
+	PRIMARY KEY (User_Number)
+);
+
+CREATE TABLE Administrator
+(
+  User_Number INT NOT NULL,
+  PRIMARY KEY (User_Number),
+  FOREIGN KEY (User_Number) REFERENCES Person(User_Number)
+);
+
+CREATE TABLE Client
+(
+  User_Number INT NOT NULL,
+  PRIMARY KEY (User_Number),
+  FOREIGN KEY (User_Number) REFERENCES Person(User_Number)
+);
+
+CREATE TABLE Claim_Manager
+(
+  User_Number INT NOT NULL,
+  PRIMARY KEY (User_Number),
+  FOREIGN KEY (User_Number) REFERENCES Person(User_Number)
+);
+
+CREATE TABLE Finance_Manager
+(
+  User_Number INT NOT NULL,
+  PRIMARY KEY (User_Number),
+  FOREIGN KEY (User_Number) REFERENCES Person(User_Number)
+);
+
+CREATE TABLE Claim
+(
+  ClaimID varchar(32) NOT NULL,
+  Owner INT NOT NULL,
+  AssignedCMNumber INT NOT NULL,
+  Claim_Status varchar(32) NOT NULL,
+  Content varchar(256) NOT NULL,
+  Value INT,
+  Date_Filed DATE NOT NULL,
+  #_of_Additional_Files INT,
+  PRIMARY KEY (ClaimID),
+  FOREIGN KEY (Owner) REFERENCES Client(User_Number),
+  FOREIGN KEY (AssignedCMNumber) REFERENCES Claim_Manager(User_Number)
+);
+
+CREATE TABLE Supplemental_File
+(
+	FileID INT NOT NULL,
+	FileName varchar(256) NOT NULL,
+	Data varbinary NOT NULL,
+	Associated_Claim varchar(32) NOT NULL,
+	PRIMARY KEY (FileID),
+ 	FOREIGN KEY (Associated_Claim) REFERENCES Claim(ClaimID)
+);
+
+CREATE TABLE Message
+(
+  Sender INT NOT NULL,
+  Receiver INT NOT NULL,
+  Message varchar(256) NOT NULL,
+  MessageID INT NOT NULL,
+  PRIMARY KEY (MessageID),
+  FOREIGN KEY (Sender) REFERENCES User(User_Number),
+  FOREIGN KEY (Receiver) REFERENCES User(User_Number)
+);
+
+CREATE TRIGGER trg_InsertPersonSubtype
+ON Person
+AFTER INSERT
+AS
+BEGIN
+    DECLARE @User_Number INT, @User_Type VARCHAR(32);
+
+    -- Get the User_Number and User_Type of the newly inserted person
+    SELECT @User_Number = User_Number, @User_Type = User_Type
+    FROM inserted;
+
+    -- Insert into the appropriate subtype table based on User_Type
+    IF @User_Type = 'Administrator'
+    BEGIN
+        INSERT INTO Administrator (User_Number)
+        VALUES (@User_Number);
+    END
+    ELSE IF @User_Type = 'Client'
+    BEGIN
+        INSERT INTO Client (User_Number)
+        VALUES (@User_Number);
+    END
+    ELSE IF @User_Type = 'Claim_Manager'
+    BEGIN
+        INSERT INTO Claim_Manager (User_Number)
+        VALUES (@User_Number);
+    END
+    ELSE IF @User_Type = 'Finance_Manager'
+    BEGIN
+        INSERT INTO Finance_Manager (User_Number)
+        VALUES (@User_Number);
+    END
+END;
