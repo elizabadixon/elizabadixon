@@ -19,8 +19,6 @@ For Intro to Software Engineering using C#/.NET on Visual Studio:
   2) Carried out using the Agile/Scrum methodology.
   3) Apart from the piece of software itself, the directory includes the sprint reviews and final report for the project.
 
-IN PROGRESS:
-
 SE463 - Software Testing & Quality Assurance:
   1) After learning about various software testing techniques, students put them into action and write reports about them. A1 is about basic Boundary Value Analysis.
   2) A2 focuses on the types of Equivalence Class Testing like Weak-Normal, Weak-Robust, and Strong-Robust with the addition of Decision Table Testing in the context of a program that sorts a list of numbers based on common sorting techniques like Insertion Sort and Bubble Sort.
@@ -28,11 +26,13 @@ SE463 - Software Testing & Quality Assurance:
   4)   A4 honed in on Slice Testing techniques by hand (although usually automated by tools such as JUnit) in order to help students understand one of the many testing techniques that help eliminate unnecessary lines of code to test in certain scenarios. I created a basic slice testing tracker program for this project.
   5) A5 focused on Bottom-Up Incremental Testing, as it had students create an artificially intelligent tic-tac-toe game by testing each feature as it was written instead of waiting until the whole program was written to test the outcomes.
   6) A6 had students compare two different builds of a calculator program from a Black-Box Testing perspective, using only the outcomes of the program on the command line to complete the analysis. 
- 
-    
-  CS351 - Algorithms:
-    1) Apart from learning about various methods of algorithm optimization, students are tasked with writing programs using the 0-1 Knapsack Problem - altered using various techniques.
-    2) I have completed the Greedy version.
+
+CS351 - Algorithms:
+  1) Each of this course's projects included various iterations of the 0-1 Knapsack problem with a Priority Queue template as the base. A1 was the Greedy Knapsack.
+  2) A2 was the Dynamic Programming version.
+  3) A3 was the Backtracking version.
+  4) A4 was the Branch and Bound version.
+
     
 
     
