@@ -1,0 +1,11 @@
+tic.exe: ticDriver.o
+	g++ ticDriver.cpp ticgame.cpp -o tic.exe
+
+ticDriver.o: ticDriver.cpp
+	g++ -c ticDriver.cpp -o ticDriver.o
+
+ticgame.o: ticgame.cpp
+	g++ -c ticgame.cpp -o ticgame.o
+
+clean:
+	rm *.o tic.exe
