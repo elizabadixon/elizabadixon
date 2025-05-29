@@ -22,13 +22,7 @@ For Intro to Software Engineering using C#/.NET on Visual Studio:
 IN PROGRESS:
 
 SE463 - Software Testing & Quality Assurance:
-	1. After learning about various software testing techniques, students put them into action and write reports about them. A1 is Boundary Value Analysis.
- 2. A2 focuses on the types of Equivalence Class Testing like Weak-Normal, Weak-Robust, and Strong-Robust with the addition of Decision Table Testing in the context of a program that sorts a list of numbers based on common sorting techniques like 				 Insertion Sort and Bubble Sort.
-    3. A3 immersed students in Data Flow Testing - using data flow charting techniques to visualize a testing problem in order to make repetitive testing processes easier to organize. 
-    4. A4 honed in on Slice Testing techniques by hand (although usually automtated by tools such as JUnit) in order to help students understand one of the many testing techniques that help eliminate unnecessary lines of code to test in certain     
-       scenarios. I created a basic slice testing tracker program for this project.
-    5. A5 focused on Bottom-Up Incremental Testing, as it had students create an artificially intelligent tic-tac-toe game by testing each feature as it was written instead of waiting until the whole program was written to test the outcomes.
-    6. A6 had students compare two different builds of a calculator program from a Black-Box Testing perspective, using only the outcomes of the program on the command line to complete the analysis. 
+  1) After learning about various software testing techniques, students put them into action and write reports about them. A1 is Boundary Value Analysis.
  
     
   CS351 - Algorithms:
