@@ -34,8 +34,8 @@ CS351 - Algorithms:
   4) A4 was the Branch and Bound version.
 
 SE461 - Managing Software Development:
-  1) As a bit of an extension to CS341 and SE361, this class serves as a bit of a capstone in C++ development with a more focus on techniques than before. For A1, I was tasked with creating an Array class from scratch.
-  2) A2 built upon A1 by utilizing a lot of the same code the original Array class, but ensuring further safeties and abstraction through adding Stack and Queue class features based upon the original Array class.
+  1) As a bit of an extension to CS341 and SE361, this class serves as a capstone in C++ development with more focus on software engineering techniques than before. For A1, I was tasked with creating an Array class from scratch.
+  2) A2 built upon A1 by utilizing a lot of the same code the original Array class, but ensuring further safeties and abstraction through adding Stack and Queue template class features based upon the original Array class.
   3) For A3, I was tasked with creating a Calculator (or "Expression Evaluator") from scratch using Software Development patterns such as Abstract Factory and Command.
   4) A4 included developing the same functionality as A3, but with patterns Composite, Visitor, and Builder (with a tree structure) instead.
 
