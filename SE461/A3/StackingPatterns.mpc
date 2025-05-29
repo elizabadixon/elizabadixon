@@ -1,0 +1,35 @@
+project (StackingPatterns) {
+
+    exename = calc
+
+    Source_Files{
+        exprCalcDriver.cpp
+        BinaryOperator_Command.cpp
+        Add_Command.cpp
+        Subtract_Command.cpp
+        Multiply_Command.cpp
+        Divide_Command.cpp
+        Modulo_Command.cpp
+        Parenthesis_Command.cpp
+        Number_Command.cpp
+        Stack_Factory.cpp
+    }
+
+    Template_Files {
+        Array.cpp
+        Curr_Array.cpp
+        Stack.cpp
+    }
+
+    Inline_Files{
+        Curr_Array.inl
+        Array.inl
+        Stack.inl
+    }
+
+    Header_Files{
+        Command.h
+        Command_Factory.h
+    }
+
+}

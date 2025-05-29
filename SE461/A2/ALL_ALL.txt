@@ -1,0 +1,480 @@
+==3790020== Memcheck, a memory error detector
+==3790020== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==3790020== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==3790020== Command: Composition
+==3790020== Parent PID: 3780525
+==3790020== 
+==3790020== Conditional jump or move depends on uninitialised value(s)
+==3790020==    at 0x10D5B3: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10BC19: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== Conditional jump or move depends on uninitialised value(s)
+==3790020==    at 0x484A2A0: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10BC19: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== Invalid write of size 4
+==3790020==    at 0x10CE8C: Stack<int>::push(int) (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10BCBA: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34b0 is 0 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10BC19: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== Invalid write of size 4
+==3790020==    at 0x10CE8C: Stack<int>::push(int) (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10BDF1: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34b0 is 0 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10BC19: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== Invalid write of size 4
+==3790020==    at 0x10CE8C: Stack<int>::push(int) (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10BE64: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34b4 is 4 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10BC19: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== Invalid read of size 4
+==3790020==    at 0x10BF79: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34b4 is 4 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10BC19: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== Invalid write of size 4
+==3790020==    at 0x10CE8C: Stack<int>::push(int) (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10BF8F: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34b8 is 8 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10BC19: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== Invalid read of size 4
+==3790020==    at 0x10C095: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34b8 is 8 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10BC19: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== Invalid write of size 4
+==3790020==    at 0x10C11F: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34b8 is 8 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10BC19: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== Invalid read of size 4
+==3790020==    at 0x10C218: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34b4 is 4 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10BC19: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== Conditional jump or move depends on uninitialised value(s)
+==3790020==    at 0x10D5B3: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10D5E9: Queue<int>::Queue() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C458: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== Conditional jump or move depends on uninitialised value(s)
+==3790020==    at 0x484A2A0: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10D5E9: Queue<int>::Queue() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C458: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== Invalid read of size 4
+==3790020==    at 0x10D612: Queue<int>::Queue() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C458: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34f0 is 0 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10D5E9: Queue<int>::Queue() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C458: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== Invalid read of size 4
+==3790020==    at 0x10D624: Queue<int>::Queue() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C458: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34f0 is 0 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10D5E9: Queue<int>::Queue() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C458: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== Invalid read of size 4
+==3790020==    at 0x10CFB8: Queue<int>::enqueue(int) (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C4B0: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34f4 is 4 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10D5E9: Queue<int>::Queue() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C458: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== Invalid write of size 4
+==3790020==    at 0x10CFCD: Queue<int>::enqueue(int) (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C4B0: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34f0 is 0 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10D5E9: Queue<int>::Queue() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C458: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== Invalid read of size 4
+==3790020==    at 0x10CFB8: Queue<int>::enqueue(int) (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C560: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34f4 is 4 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10D5E9: Queue<int>::Queue() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C458: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== Invalid write of size 4
+==3790020==    at 0x10CFCD: Queue<int>::enqueue(int) (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C560: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34f0 is 0 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10D5E9: Queue<int>::Queue() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C458: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== Invalid read of size 4
+==3790020==    at 0x10CFB8: Queue<int>::enqueue(int) (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C5B8: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34f8 is 8 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10D5E9: Queue<int>::Queue() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C458: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== Invalid write of size 4
+==3790020==    at 0x10CFCD: Queue<int>::enqueue(int) (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C5B8: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34f4 is 4 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10D5E9: Queue<int>::Queue() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C458: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== Invalid read of size 4
+==3790020==    at 0x10D360: Queue<int>::head() const (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C63C: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34f4 is 4 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10D5E9: Queue<int>::Queue() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C458: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== Invalid read of size 4
+==3790020==    at 0x10D4B9: Queue<int>::tail() const (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C671: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34f0 is 0 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10D5E9: Queue<int>::Queue() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C458: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== Invalid read of size 4
+==3790020==    at 0x10D07F: Queue<int>::dequeue(int) (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C6B0: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34f4 is 4 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10D5E9: Queue<int>::Queue() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C458: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== Invalid write of size 4
+==3790020==    at 0x10D08D: Queue<int>::dequeue(int) (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C6B0: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34f0 is 0 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10D5E9: Queue<int>::Queue() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C458: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== Invalid read of size 4
+==3790020==    at 0x10D360: Queue<int>::head() const (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C734: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34f0 is 0 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10D5E9: Queue<int>::Queue() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C458: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== Invalid read of size 4
+==3790020==    at 0x10D4B9: Queue<int>::tail() const (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C769: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34f0 is 0 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10D5E9: Queue<int>::Queue() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C458: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== 
+==3790020== HEAP SUMMARY:
+==3790020==     in use at exit: 0 bytes in 0 blocks
+==3790020==   total heap usage: 19 allocs, 19 frees, 77,848 bytes allocated
+==3790020== 
+==3790020== All heap blocks were freed -- no leaks are possible
+==3790020== 
+==3790020== Use --track-origins=yes to see where uninitialised values come from
+==3790020== ERROR SUMMARY: 32 errors from 26 contexts (suppressed: 0 from 0)
+==3790020== 
+==3790020== 1 errors in context 1 of 26:
+==3790020== Invalid read of size 4
+==3790020==    at 0x10D4B9: Queue<int>::tail() const (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C769: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34f0 is 0 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10D5E9: Queue<int>::Queue() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C458: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== 
+==3790020== 1 errors in context 2 of 26:
+==3790020== Invalid read of size 4
+==3790020==    at 0x10D360: Queue<int>::head() const (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C734: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34f0 is 0 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10D5E9: Queue<int>::Queue() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C458: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== 
+==3790020== 1 errors in context 3 of 26:
+==3790020== Invalid read of size 4
+==3790020==    at 0x10D4B9: Queue<int>::tail() const (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C671: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34f0 is 0 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10D5E9: Queue<int>::Queue() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C458: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== 
+==3790020== 1 errors in context 4 of 26:
+==3790020== Invalid read of size 4
+==3790020==    at 0x10D360: Queue<int>::head() const (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C63C: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34f4 is 4 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10D5E9: Queue<int>::Queue() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C458: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== 
+==3790020== 1 errors in context 5 of 26:
+==3790020== Invalid write of size 4
+==3790020==    at 0x10CFCD: Queue<int>::enqueue(int) (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C5B8: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34f4 is 4 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10D5E9: Queue<int>::Queue() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C458: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== 
+==3790020== 1 errors in context 6 of 26:
+==3790020== Invalid read of size 4
+==3790020==    at 0x10CFB8: Queue<int>::enqueue(int) (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C5B8: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34f8 is 8 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10D5E9: Queue<int>::Queue() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C458: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== 
+==3790020== 1 errors in context 7 of 26:
+==3790020== Invalid write of size 4
+==3790020==    at 0x10CFCD: Queue<int>::enqueue(int) (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C560: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34f0 is 0 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10D5E9: Queue<int>::Queue() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C458: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== 
+==3790020== 1 errors in context 8 of 26:
+==3790020== Invalid read of size 4
+==3790020==    at 0x10CFB8: Queue<int>::enqueue(int) (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C560: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34f4 is 4 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10D5E9: Queue<int>::Queue() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C458: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== 
+==3790020== 1 errors in context 9 of 26:
+==3790020== Invalid write of size 4
+==3790020==    at 0x10CFCD: Queue<int>::enqueue(int) (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C4B0: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34f0 is 0 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10D5E9: Queue<int>::Queue() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C458: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== 
+==3790020== 1 errors in context 10 of 26:
+==3790020== Invalid read of size 4
+==3790020==    at 0x10CFB8: Queue<int>::enqueue(int) (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C4B0: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34f4 is 4 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10D5E9: Queue<int>::Queue() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C458: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== 
+==3790020== 1 errors in context 11 of 26:
+==3790020== Invalid read of size 4
+==3790020==    at 0x10D624: Queue<int>::Queue() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C458: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34f0 is 0 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10D5E9: Queue<int>::Queue() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C458: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== 
+==3790020== 1 errors in context 12 of 26:
+==3790020== Invalid read of size 4
+==3790020==    at 0x10D612: Queue<int>::Queue() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C458: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34f0 is 0 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10D5E9: Queue<int>::Queue() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C458: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== 
+==3790020== 1 errors in context 13 of 26:
+==3790020== Conditional jump or move depends on uninitialised value(s)
+==3790020==    at 0x484A2A0: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10D5E9: Queue<int>::Queue() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C458: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== 
+==3790020== 1 errors in context 14 of 26:
+==3790020== Conditional jump or move depends on uninitialised value(s)
+==3790020==    at 0x10D5B3: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10D5E9: Queue<int>::Queue() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C458: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== 
+==3790020== 1 errors in context 15 of 26:
+==3790020== Invalid write of size 4
+==3790020==    at 0x10C11F: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34b8 is 8 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10BC19: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== 
+==3790020== 1 errors in context 16 of 26:
+==3790020== Invalid write of size 4
+==3790020==    at 0x10CE8C: Stack<int>::push(int) (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10BF8F: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34b8 is 8 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10BC19: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== 
+==3790020== 1 errors in context 17 of 26:
+==3790020== Invalid write of size 4
+==3790020==    at 0x10CE8C: Stack<int>::push(int) (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10BE64: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34b4 is 4 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10BC19: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== 
+==3790020== 1 errors in context 18 of 26:
+==3790020== Invalid write of size 4
+==3790020==    at 0x10CE8C: Stack<int>::push(int) (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10BDF1: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34b0 is 0 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10BC19: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== 
+==3790020== 1 errors in context 19 of 26:
+==3790020== Invalid write of size 4
+==3790020==    at 0x10CE8C: Stack<int>::push(int) (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10BCBA: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34b0 is 0 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10BC19: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== 
+==3790020== 1 errors in context 20 of 26:
+==3790020== Conditional jump or move depends on uninitialised value(s)
+==3790020==    at 0x484A2A0: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10BC19: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== 
+==3790020== 1 errors in context 21 of 26:
+==3790020== Conditional jump or move depends on uninitialised value(s)
+==3790020==    at 0x10D5B3: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10BC19: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== 
+==3790020== 2 errors in context 22 of 26:
+==3790020== Invalid write of size 4
+==3790020==    at 0x10D08D: Queue<int>::dequeue(int) (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C6B0: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34f0 is 0 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10D5E9: Queue<int>::Queue() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C458: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== 
+==3790020== 2 errors in context 23 of 26:
+==3790020== Invalid read of size 4
+==3790020==    at 0x10D07F: Queue<int>::dequeue(int) (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C6B0: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34f4 is 4 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10D5E9: Queue<int>::Queue() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10C458: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== 
+==3790020== 2 errors in context 24 of 26:
+==3790020== Invalid read of size 4
+==3790020==    at 0x10C218: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34b4 is 4 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10BC19: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== 
+==3790020== 2 errors in context 25 of 26:
+==3790020== Invalid read of size 4
+==3790020==    at 0x10BF79: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34b4 is 4 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10BC19: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== 
+==3790020== 3 errors in context 26 of 26:
+==3790020== Invalid read of size 4
+==3790020==    at 0x10C095: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==  Address 0x4de34b8 is 8 bytes after a block of size 0 alloc'd
+==3790020==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==3790020==    by 0x10D5BD: Array<int>::Array() (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020==    by 0x10BC19: main (in /home/eadixon/se461_spring2025/A2/Composition)
+==3790020== 
+==3790020== ERROR SUMMARY: 32 errors from 26 contexts (suppressed: 0 from 0)

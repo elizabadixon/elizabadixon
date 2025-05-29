@@ -1,0 +1,45 @@
+project (TreeCalc) {
+
+    exename = tree
+
+    Source_Files{
+        driverTree.cpp
+        Binary_Op_Comm.cpp
+        Add_Expr_Node.cpp
+        Subtract_Expr_Node.cpp
+        Mult_Expr_Node.cpp
+        Div_Expr_Node.cpp
+        Mod_Expr_Node.cpp
+        Num_Expr_Node.cpp
+        Expr_Tree_Builder.cpp
+        Expr_Tree_Visitor.cpp
+    }
+
+    Template_Files{
+        Array.cpp
+        Curr_Array.cpp
+        Stack.cpp
+    }
+
+    Inline_Files{
+        Curr_Array.inl
+        Array.inl
+        Stack.inl
+    }
+
+    Header_Files{
+        Binary_Op_Comm.h
+        Add_Expr_Node.h
+        Subtract_Expr_Node.h
+        Mult_Expr_Node.h
+        Div_Expr_Node.h
+        Mod_Expr_Node.h
+        Num_Expr_Node.h
+        Expr_Node.h
+        Expr_Builder.h
+        Expr_Tree_Builder.h
+        Expr_Node_Visitor.h
+        Expr_Tree_Visitor.h
+    }
+
+}

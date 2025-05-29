@@ -1,0 +1,25 @@
+project (Composition) {
+
+	exename = Composition
+
+	Source_Files{
+		arrTempDriver.cpp
+	}
+	
+	Template_Files {
+		Curr_Array.cpp
+		Array.cpp
+		Fixed_Array.cpp
+		Stack.cpp
+		Curr_Array.h
+		Array.h
+		Fixed_Array.h
+		Stack.h
+	}
+
+	Inline_Files {
+		Curr_Array.inl
+		Array.inl
+		Stack.inl
+	}
+}
