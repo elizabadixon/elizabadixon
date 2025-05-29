@@ -1,0 +1,8 @@
+3
+24
+160
+
+Items in the greedy solution: 
+orange 50 5
+strawberry 100 14
+tangerine 10 5

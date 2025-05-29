@@ -1,0 +1,8 @@
+branch.exe: branchDriver.o
+	g++ branchDriver.cpp -o branch.exe
+
+branchDriver.o: branchDriver.cpp
+	g++ -c branchDriver.cpp -o branchDriver.o
+
+clean:
+	rm *.o branch.exe

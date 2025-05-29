@@ -1,0 +1,8 @@
+greedy.exe: greedyDriver.o
+	g++ greedyDriver.cpp -o greedy.exe
+
+greedyDriver.o: greedyDriver.cpp
+	g++ -c greedyDriver.cpp -o greedyDriver.o
+
+clean:
+	rm *.o greedy.exe

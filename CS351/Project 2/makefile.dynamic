@@ -1,0 +1,8 @@
+dynamic.exe: dynamDriver.o
+	g++ dynamDriver.cpp -o dynamic.exe
+
+dynamDriver.o: dynamDriver.cpp
+	g++ -c dynamDriver.cpp -o dynamDriver.o
+
+clean:
+	rm *.o dynamic.exe

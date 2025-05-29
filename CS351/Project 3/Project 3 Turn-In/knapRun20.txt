@@ -1,0 +1,12 @@
+# of items to test: 20
+Capacity of the knapsack: 40
+Optimal set of items in the knapsack: 
+d 177 3
+l 191 4
+p 198 10
+c 173 9
+n 186 13
+ 
+Final number of items in the knapsack: 5
+Total weight of the items in the knapsack: 39
+Total value of the items in the knapsack: 925

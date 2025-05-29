@@ -1,0 +1,11 @@
+4
+35
+550
+
+Number of (Refined) Matrix Entries Actually Calculated: 1820
+
+Items in the Solution:
+1210 80 8
+1206 124 11
+1202 178 7
+1176 168 9

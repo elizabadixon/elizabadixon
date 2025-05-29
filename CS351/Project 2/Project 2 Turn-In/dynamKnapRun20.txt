@@ -1,0 +1,10 @@
+3
+24
+469
+
+Number of (Refined) Matrix Entries Actually Calculated: 166
+
+Items in the Solution:
+o 164 7
+j 166 14
+c 139 3

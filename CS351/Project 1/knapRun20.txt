@@ -1,0 +1,11 @@
+6
+58
+801
+
+Items in the greedy solution: 
+k 101 4
+o 65 3
+l 186 9
+q 198 14
+n 181 13
+g 70 15

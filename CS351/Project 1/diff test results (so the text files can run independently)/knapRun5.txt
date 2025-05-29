@@ -1,0 +1,8 @@
+3
+23
+348
+
+Items in the greedy solution: 
+d 75 2
+c 184 14
+a 89 7

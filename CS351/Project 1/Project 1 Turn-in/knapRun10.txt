@@ -1,0 +1,9 @@
+4
+26
+425
+
+Items in the greedy solution: 
+e 127 4
+j 64 3
+g 52 3
+d 182 16

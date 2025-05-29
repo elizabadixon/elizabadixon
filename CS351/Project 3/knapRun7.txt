@@ -1,0 +1,9 @@
+# of items to test: 7
+Capacity of the knapsack: 25
+Optimal set of items in the knapsack: 
+orange 50 5
+kitchensink 140 20
+ 
+Final number of items in the knapsack: 2
+Total weight of the items in the knapsack: 25
+Total value of the items in the knapsack: 190
